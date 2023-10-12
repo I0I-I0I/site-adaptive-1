@@ -1,0 +1,76 @@
+/* Quotes */
+
+.quotes {
+	position: relative;
+	background: url("@images/quotes/bg.jpg")
+		no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+.quotes-shadow {
+	background: radial-gradient(
+		177.91% 78.74% at 19.56% 37.57%,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(0, 0, 0, 0) 19.22%,
+		#080a0b 99.74%
+	);
+}
+
+.quotes__inner {
+	min-height: 100vh;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: repeat(
+		2,
+		1fr
+	);
+	justify-content: start;
+	align-items: center;
+
+	@media (width < 1000px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Header */
+
+.quotes__header {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 70px;
+}
+
+.quotes__header > .title-description {
+	order: -1;
+}
+
+/* Main */
+
+.quotes__text {
+	margin-bottom: 50px;
+}
+
+.card__button {
+	@media (width < 1000px) {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+/* Comments */
+
+.quotes__comments {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 30px;
+	margin-top: 30px;
+}
+
+.quotes__comments
+	> .card:nth-child(odd) {
+	@media (width >= 1000px) {
+		margin-left: auto;
+	}
+}

@@ -1,0 +1,10 @@
+@import "hero.css";
+@import "about.css";
+@import "features.css";
+@import "requirements.css";
+@import "quotes.css";
+@import "subscribe.css";
+
+.main {
+	min-height: 100vh;
+}

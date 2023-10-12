@@ -1,0 +1,139 @@
+/* Additionally */
+
+.header__additionally {
+	display: flex;
+	align-items: center;
+
+	@media (width < 1000px) {
+		margin-left: auto;
+	}
+}
+
+/* Dropdown */
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown label */
+
+.dropdown__label {
+	color: var(--text-color);
+	background-color: transparent;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	position: relative;
+	border: none;
+	margin-right: 10px;
+
+	&:focus-visible {
+		outline: 2px solid
+			rgb(var(--link-color-hover));
+	}
+
+	&::after {
+		content: "";
+		background: url("@images/icons/tick.svg")
+			no-repeat;
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		right: -15px;
+		top: 5px;
+		transition: all 0.2s;
+	}
+
+	.dropdown.open &::after {
+		transform: rotate(180deg);
+		top: -2px;
+	}
+
+	@media (width >= 1000px) {
+		.dropdown:hover &::after {
+			transform: rotate(180deg);
+			top: -2px;
+		}
+	}
+}
+
+/* Dropdown menu */
+
+.dropdown__menu {
+	min-width: 55px;
+	position: absolute;
+	left: 0;
+	background-color: rgb(
+		var(--bg-color) / 75%
+	);
+	margin-left: -8px;
+	padding: 8px;
+	border-radius: 3px;
+
+	.dropdown.open & {
+		display: block;
+	}
+
+	@media (width >= 1000px) {
+		.dropdown:hover & {
+			display: block;
+		}
+	}
+}
+
+/* Dropdown item */
+
+.dropdown__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+/* Dropdown lang */
+
+.dropdown__lang {
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	text-align: left;
+	text-transform: uppercase;
+	color: var(--text-color);
+
+	&:hover,
+	&:focus-visible {
+		color: rgb(
+			var(--link-color-hover)
+		);
+	}
+
+	@media (width < 1000px) {
+		font-size: 16px;
+		padding: 10px;
+	}
+}
+
+/* Platforms */
+
+.platforms {
+	display: flex;
+	gap: 17px;
+
+	@media (width < 1000px) {
+		display: none;
+	}
+}
+
+/* Line */
+
+.header-line {
+	padding: 0 0.5px;
+	height: 30px;
+	background-color: rgb(
+		var(--text-color) / 50%
+	);
+	margin: 0 20px;
+}

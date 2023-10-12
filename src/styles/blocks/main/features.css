@@ -1,0 +1,152 @@
+/* Features */
+
+.features {
+	position: relative;
+	background: url("@images/fetures/bg.jpg")
+		no-repeat;
+		background-size: cover;
+	padding: 2vh 0;
+
+	@media (width < 1000px) {
+		background-position: 40% top;
+	}
+}
+
+.features__wrapper {
+	min-height: 98vh;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: start;
+	align-items: center;
+	gap: 100px;
+
+	@media (width < 1000px) {
+		grid-template-columns: 1fr;
+		margin-left: 20vw;
+	}
+}
+
+.features__inner {
+	grid-column: -2 / -1;
+}
+
+.features-shadow {
+	background: radial-gradient(
+		81.01% 53.57% at 30.85% 53.65%,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(0, 0, 0, 0) 19.2%,
+		rgba(4, 5, 6, 0.52) 47.48%,
+		#080a0b 99.74%
+	);
+}
+
+/* Header */
+
+.features__header {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 70px;
+}
+
+.features__header .title-description {
+	order: -1;
+}
+
+/* Main */
+
+.features__details {
+	--padding-left: 40px;
+
+	position: relative;
+}
+
+.features__details:not(:last-child) {
+	margin-bottom: 35px;
+}
+
+.features__summary {
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	list-style: none;
+	padding-left: var(--padding-left);
+}
+
+.features__summary:focus-visible {
+	outline: 2px solid rgb(var(--text-special-color));
+}
+
+.features__summary::-webkit-details-marker {
+	display: none;
+}
+
+.features__summary::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 1px solid
+		rgb(var(--text-color));
+}
+
+.features__text {
+	pointer-events: none;
+	opacity: 0;
+	position: relative;
+	bottom: 40px;
+	left: 0;
+	padding-left: var(--padding-left);
+}
+
+.features__details[open]
+	.features__text {
+	animation: text-down 0.4s forwards;
+}
+
+@keyframes text-down {
+	0% {
+		bottom: 40px;
+		opacity: 0;
+	}
+	100% {
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
+.features__details[open]
+	.features__summary::before {
+	background-color: rgb(
+		var(--text-color)
+	);
+}
+
+.features__summary::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 6px;
+	width: 2px;
+	background-color: rgb(
+		var(--text-color)
+	);
+	transition: all 0.4s;
+}
+.features__details[open]
+	.features__summary::after {
+	animation: line-down 0.5s forwards;
+}
+
+@keyframes line-down {
+	0% {
+		bottom: 0;
+	}
+	100% {
+		bottom: -60px;
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"extends": ["stylelint-config-standard"],
+	"ignoreFiles": "**/*.normalize.css",
+	"rules": {
+		"selector-class-pattern": null,
+		"no-empty-source": null,
+		"import-notation": "string"
+	}
+}

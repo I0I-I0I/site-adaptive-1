@@ -1,0 +1,63 @@
+.card {
+	position: relative;
+	border-radius: 10px;
+	background-color: rgba(
+		var(--text-color) / 0.08
+	);
+	width: 450px;
+	min-height: 180px;
+	padding: 11px 21px 20px 15px;
+
+	@media (width < 1000px) {
+		width: 290px;
+	}
+}
+
+.card::after {
+	content: url("@images/icons/twitter-opacity.svg");
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+
+.card__header {
+	display: flex;
+	gap: 22px;
+}
+
+.card__name {
+	font-size: clamp(21px, 2vw, 24px);
+}
+
+.card__image-block {
+	content: "";
+	background-color: rgb(var(--text-special-color));
+	border-radius: 50%;
+}
+
+.card__image {
+	position: relative;
+	top: -2px;
+	left: -10px;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+}
+
+.card__main {
+	margin-top: 25px;
+	margin-bottom: 9px;
+}
+
+.card__work-place {
+	text-align: justify;
+	font-size: clamp(14px, 2vw, 18px);
+	line-height: normal;
+	opacity: 0.5;
+}
+
+.card__date {
+	font-size: clamp(11px, 2vw, 14px);
+	line-height: normal;
+	opacity: 0.5;
+}

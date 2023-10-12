@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en" class="page">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles/index.min.css?_v=20231012213343" />
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231012213343"
+	/>
+	<script src="js/app.min.js?_v=20231012213343" defer></script>
+	<title>Main</title>
+</head>
+
+
+	<body class="page__body">
+		<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<a class="logo__link">
+				<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png" alt="505 logo" class="logo" /></picture>
+			</a>
+			<nav class="menu" id="menu">
+				<button class="burger" id="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#hero" class="menu__link">main</a></li>
+					<li class="menu__item"><a href="#about" class="menu__link">about</a></li>
+					<li class="menu__item">
+						<a href="#features" class="menu__link">game features</a>
+					</li>
+					<li class="menu__item">
+						<a href="#requirements" class="menu__link">System requirements</a>
+					</li>
+					<li class="menu__item"><a href="#quotes" class="menu__link">quotes</a></li>
+				</ul>
+			</nav>
+			<div class="header__additionally">
+				<div class="dropdown" id="dropdown">
+					<button type="button" class="dropdown__label" id="dropdown-label">
+						Eng
+					</button>
+					<div class="dropdown__menu hidden" id="dropdown-menu">
+						<ul class="dropdown__langs">
+							<li class="dropdown__item">
+								<button class="dropdown__lang">Rus</button>
+							</li>
+							<li class="dropdown__item">
+								<button class="dropdown__lang">Fra</button>
+							</li>
+							<li class="dropdown__item">
+								<button class="dropdown__lang">Deu</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-line"></div>
+				<div class="platforms">
+					<a href="#" target="_blank" class="platforms__link">
+						<img src="images/icons/xbox.svg" alt="Buy on Xbox" class="steam" />
+					</a>
+					<a href="#" target="_blank" class="platforms__link">
+						<img
+							src="images/icons/steam.svg"
+							alt="Buy on Steam"
+							class="steam"
+						/>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+		<main class="main">
+			<section class="hero" id="hero">
+	<div class="container hero__inner">
+		<h1 class="hero__title title">Survive at all costs</h1>
+		<div class="hero__description title-description">
+			Experience new social battle royale game
+		</div>
+		<button class="button">
+			<span class="button__text">Buy Now on Steam</span>
+			<span class="hero-line"></span>
+			<span class="button__price">$14.99</span>
+		</button>
+	</div>
+	<div class="hero__footer">
+		<a href="#about" class="hero__anchor">The story</a>
+		<form action="" class="slider">
+			<input
+				name="slider__input"
+				type="radio"
+				class="slider__input"
+				checked
+			/>
+			<input name="slider__input" type="radio" class="slider__input" />
+			<input name="slider__input" type="radio" class="slider__input" />
+			<input name="slider__input" type="radio" class="slider__input" />
+			<button
+				type="submit"
+				class="slider__button"
+				aria-label="next background image"
+			></button>
+		</form>
+	</div>
+	<div class="hero__shadow bg-shadow"></div>
+</section>
+
+			<section class="about" id="about">
+	<div class="container about__inner">
+		<div class="about__header">
+			<h2 class="about__title title">
+				Social battle royale game
+				<hr class="about__line" noshade size="3" />
+			</h2>
+			<span class="about__description title-description">What is SOS?</span>
+
+			<p class="about__text text">
+				Each round, you and 15 other contestants compete to escape a deadly
+				island filled with monsters. The trick is: three people can survive.
+				Will you run solo or form friendships with others to escape?
+			</p>
+			<p class="about__text text">
+				Making the right decisions could be the difference between life and
+				death.
+			</p>
+		</div>
+
+		<div class="swiper">
+			<div class="slider-top">
+				<div class="swiper-button-next" id="swiper-button-next"></div>
+			</div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<picture><source srcset="images/about/slider-1.webp" type="image/webp"><img class="slider__image" src="images/about/slider-1.jpg" alt="" /></picture>
+				</div>
+				<div class="swiper-slide">
+					<picture><source srcset="images/about/slider-2.webp" type="image/webp"><img class="slider__image" src="images/about/slider-2.jpg" alt="" /></picture>
+				</div>
+				<div class="swiper-slide">
+					<picture><source srcset="images/about/slider-3.webp" type="image/webp"><img class="slider__image" src="images/about/slider-3.jpg" alt="" /></picture>
+				</div>
+				<div class="swiper-slide">
+					<picture><source srcset="images/about/slider-4.webp" type="image/webp"><img class="slider__image" src="images/about/slider-4.jpg" alt="" /></picture>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+
+		</div>
+	</div>
+	<div class="about-shadow bg-shadow"></div>
+</section>
+
+
+			<section class="features" id="features">
+	<div class="container features__wrapper">
+		<div class="features__inner">
+			<div class="features__header">
+				<h2 class="title">Features</h2>
+				<span class="title-description">What’s so special?</span>
+			</div>
+			<details class="features__details" open>
+				<summary class="subtitle features__summary">
+					Survive at all costs
+				</summary>
+				<p class="features__text text">
+					You have 30 minutes to find a relic, signal for extraction, and grab
+					one of three spots on the rescue chopper.
+				</p>
+			</details>
+			<details class="features__details">
+				<summary class="subtitle features__summary">
+					Create allies and enemies
+				</summary>
+				<p class="features__text text">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ut
+					libero iste accusamus molestias aliquam.
+				</p>
+			</details>
+			<details class="features__details">
+				<summary class="subtitle features__summary">
+					Impress the audience
+				</summary>
+				<p class="features__text text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+					eligendi.
+				</p>
+			</details>
+		</div>
+	</div>
+	<div class="features-shadow bg-shadow"></div>
+</section>
+
+
+			<section class="requirements" id="requirements">
+	<div class="container requirements__inner">
+		<div class="requirements__header">
+			<h2 class="title requirements__title">System requirements</h2>
+			<span class="title-description">Can My Computer Run this game?</span>
+		</div>
+		<table class="requirements__table">
+			<tbody>
+				<tr class="requirements__tr">
+					<td>
+						<h3 class="subtitle requirements__subtitle">OS:</h3>
+						<p class="text">Windows 7 64-bit only (No OSX support at this time)</p>
+					</td>
+					<td>
+						<h3 class="subtitle requirements__subtitle">Processor:</h3>
+						<p class="text">Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+					</td>
+				</tr>
+				<tr class="requirements__tr">
+					<td>
+						<h3 class="subtitle requirements__subtitle">Memory:</h3>
+						<p class="text">8 GB RAM</p>
+					</td>
+					<td>
+						<h3 class="subtitle requirements__subtitle">Storage:</h3>
+						<p class="text">8 GB available space</p>
+					</td>
+				</tr>
+				<tr class="requirements__tr">
+					<td colspan="2">
+						<h3 class="subtitle requirements__subtitle">GRAPHICS:</h3>
+						<p class="text">
+							NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11
+							(Shader Model 5)
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="requirements-shadow bg-shadow"></div>
+</section>
+
+
+			<section class="quotes" id="quotes">
+	<div class="container quotes__inner">
+		<div class="quotes__left">
+			<div class="quotes__header">
+				<h1 class="title quotes__title">Press quotes</h1>
+				<span class="title-description">What people think?</span>
+			</div>
+			<div class="quotes__main">
+				<p class="quotes__text">
+					Our goal is to create a product and service that you’re satisfied with
+					and use it every day. This is why we’re constantly working on our
+					services to make it better every day and really listen to what our
+					users has to say.
+				</p>
+				<button class="card__button button">Read more testimonials</button>
+			</div>
+		</div>
+
+		<div class="quotes__comments">
+			<article class="card">
+				<div class="card__header">
+					<div class="card__image-block">
+						<img
+							class="card__image"
+							src="images/quotes/comment-1.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="">
+						<h3 class="card__name subtitle">Evan Lahti</h3>
+						<span class="card__work-place">PC Gamer</span>
+					</div>
+				</div>
+				<div class="card__main">
+					<q class="card__comment text"
+						>One of my gaming highlights of the year.</q
+					>
+				</div>
+				<div class="card__footer">
+					<span class="card__date text">October 18, 2018</span>
+				</div>
+			</article>
+			<article class="card">
+				<div class="card__header">
+					<div class="card__image-block">
+						<img
+							class="card__image"
+							src="images/quotes/comment-2.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="">
+						<h3 class="card__name subtitle">Jada Griffin</h3>
+						<span class="card__work-place">Nerdreactor </span>
+					</div>
+				</div>
+				<div class="card__main">
+					<q class="card__comment text"
+						>The next big thing in the world of streaming and survival games.
+					</q>
+				</div>
+				<div class="card__footer">
+					<span class="card__date text">December 21, 2018</span>
+				</div>
+			</article>
+			<article class="card">
+				<div class="card__header">
+					<div class="card__image-block">
+						<img
+							class="card__image"
+							src="images/quotes/comment-3.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="">
+						<h3 class="card__name subtitle">Aaron Williams</h3>
+						<span class="card__work-place">Uproxx</span>
+					</div>
+				</div>
+				<div class="card__main">
+					<q class="card__comment text"
+						>Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.</q
+					>
+				</div>
+				<div class="card__footer">
+					<span class="card__date text">December 24, 2018</span>
+				</div>
+			</article>
+		</div>
+	</div>
+	<div class="quotes-shadow bg-shadow"></div>
+</section>
+
+
+			<section class="subscribe">
+	<div class="container subscribe__wrapper">
+		<div class="subscribe__inner">
+			<div class="subscribe__header">
+				<h1 class="title subscribe__title">Newsletter subscribe</h1>
+				<span class="title-description">Want to stay in touch?</span>
+				<p class="subscribe__text text">
+					In order to start receiving our news, all you have to do is enter your
+					email address. Everything else will be taken care of by us. We will
+					send you emails containing information about game. We don’t spam.
+				</p>
+			</div>
+			<form class="subscribe__form">
+				<label class="form__label" for="email">
+					<span class="form__text">Your email address</span>
+					<input class="form__input text" id="email" type="email" />
+				</label>
+				<button type="submit" class="form__button button">Subscribe now</button>
+			</form>
+		</div>
+	</div>
+	<div class="subscribe-shadow bg-shadow"></div>
+</section>
+
+		</main>
+
+		<footer class="footer">
+	<div class="container footer__inner">
+		<div class="footer__top">
+			<a class="logo__link">
+				<picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png" alt="505 logo" class="logo footer__logo" /></picture>
+			</a>
+			<nav class="menu" id="menu">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#hero" class="menu__link">main</a>
+					</li>
+					<li class="menu__item">
+						<a href="#about" class="menu__link">about</a>
+					</li>
+					<li class="menu__item">
+						<a href="#features" class="menu__link">game features</a>
+					</li>
+					<li class="menu__item">
+						<a href="#requirements" class="menu__link">System requirements</a>
+					</li>
+					<li class="menu__item">
+						<a href="#quotes" class="menu__link">quotes</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="social">
+				<a href="#" class="link">
+					<img class="social__image" src="images/icons/facebook.svg" alt=""
+				/></a>
+				<a href="#" class="">
+					<img class="social__image" src="images/icons/twitter.svg" alt=""
+				/></a>
+				<a href="#" class="">
+					<img class="social__image" src="images/icons/youtube.svg" alt=""
+				/></a>
+				<a href="#" class="">
+					<img class="social__image" src="images/icons/twitch.svg" alt=""
+				/></a>
+			</div>
+		</div>
+		<hr class="footer__line" />
+		<div class="footer__bottom">
+			<span class="footer__copywriting">
+				&#169; 2018 Outpost Games, Inc. All Rights Reserved
+			</span>
+			<ul class="privacy">
+				<li class="privacy__item">
+					<a href="" class="privacy__link">Privacy Policy</a>
+				</li>
+				<li class="privacy__item">
+					<a href="" class="privacy__link">Terms of Services</a>
+				</li>
+				<li class="privacy__item">
+					<a href="" class="privacy__link">Code of Conduct</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231012213343"></script>
+	</body>
+</html>

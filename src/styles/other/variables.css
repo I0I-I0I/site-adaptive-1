@@ -1,0 +1,47 @@
+:root {
+	/* Page */
+	--page-width: 1160px;
+	--page-padding: 15px;
+	--main-width: calc(
+		var(--page-width) +
+			(var(--page-padding) * 2)
+	);
+
+	/* Font size */
+	--font-size: 1em;
+
+	/* Colors */
+	--bg-color: 0 0 0;
+
+	/* Fonts */
+	--text-color: 255 255 255;
+	--text-color-invert: 26 25 23;
+	--text-special-color: 255 181 72;
+
+	/* Interactive */
+	--link-color-hover: 255 181 72;
+	--selection-color: var(--text-color-invert);
+	--selection-color-bg: var(--link-color-hover);
+	--button-gradient-from: 255 181 72;
+	--button-gradient-to: 243 175 52;
+	--button-color: linear-gradient(
+		rgb(
+			var(--button-gradient-from) /
+				100%
+		),
+		rgb(
+			var(--button-gradient-to) /
+				100%
+		)
+	);
+	--button-color-hover: linear-gradient(
+		rgb(
+			var(--button-gradient-from) /
+				90%
+		),
+		rgb(
+			var(--button-gradient-to) /
+				90%
+		)
+	);
+}

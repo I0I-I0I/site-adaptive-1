@@ -1,0 +1,17 @@
+.page {
+	font-size: var(--font-size);
+	font-family: "Open Sans", sans-serif;
+	scroll-behavior: smooth;
+}
+
+.page__body {
+	overflow-x: hidden;
+	min-height: 100vh;
+	background-color: rgb(var(--bg-color));
+	color: rgb(var(--text-color));
+	display: grid;
+	grid-template-rows:
+		min-content
+		1fr
+		min-content;
+}

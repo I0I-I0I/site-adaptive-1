@@ -1,0 +1,25 @@
+@import "navigation.css";
+@import "additionally.css";
+
+/* Header */
+
+.header__inner {
+	max-width: var(--page-width);
+	margin: 0 auto;
+	z-index: 10;
+	position: fixed;
+	top: var(--page-padding);
+	left: var(--page-padding);
+	right: var(--page-padding);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
+/* Logo */
+
+.logo {
+	width: 55px;
+	height: auto;
+}

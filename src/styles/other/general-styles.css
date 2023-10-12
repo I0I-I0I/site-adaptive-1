@@ -1,0 +1,162 @@
+/* Container */
+.container {
+	position: relative;
+	max-width: var(--main-width);
+	padding: 0 var(--page-padding);
+	margin: 0 auto;
+}
+
+/* Hidden */
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Title */
+
+.title {
+	color: var(--text-color);
+	font-family: "Bebas Neue",
+		sans-serif;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: clamp(33px, 5vw, 80px);
+}
+
+.title-description {
+	color: rgb(var(--text-color));
+	font-family: "Bebas Neue",
+		sans-serif;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: clamp(18px, 2vw, 24px);
+}
+
+details {
+	margin: 0;
+}
+
+.subtitle {
+	color: rgb(
+		var(--text-special-color)
+	);
+	text-align: center;
+	font-family: "Bebas Neue";
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 2px;
+	text-align: left;
+	font-size: clamp(21px, 3vw, 36px);
+}
+
+.subtitle__inner {
+	color: rgb(var(--text-color));
+	text-align: justify;
+	font-family: "Open Sans";
+	font-size: clamp(14px, 2vw, 18px);
+	font-weight: 400;
+	line-height: 22px;
+}
+
+/* Text */
+
+.text {
+	color: rgb(var(--text-color));
+	font-family: "Open Sans";
+	font-size: clamp(14px, 2vw, 18px);
+	font-weight: 400;
+	line-height: normal;
+}
+
+/* Button */
+
+.button {
+	color: #1a1917;
+	background: var(--button-color);
+	padding: 17px;
+	border: 1px solid
+		rgb(var(--bg-color) / 10%);
+	border-radius: 4px;
+	font-family: "Open Sans", sans-serif;
+	font-size: clamp(
+		14px,
+		0.5em + 1vw,
+		16px
+	);
+	font-weight: 700;
+	text-align: center;
+	transition: all 0.05s;
+
+	@media (width >= 1000px) {
+		&:hover {
+			border: 1px solid
+				rgb(
+					var(--bg-color) /
+						80%
+				);
+			box-shadow: 0 0 1px 1px
+				inset;
+		}
+	}
+
+	&.button-animation {
+		animation: running 0.5s
+			button-active;
+	}
+}
+
+@keyframes button-active {
+	0% {
+		border: 1px solid
+			rgb(var(--bg-color) / 30%);
+		box-shadow: 0 0 1px 1px inset;
+	}
+	50% {
+		background: var(
+			--button-color-hover
+		);
+		border: 1px solid
+			rgb(var(--bg-color) / 80%);
+		box-shadow: 0 0 10px 1px inset;
+	}
+	100% {
+		border: 1px solid transparent;
+		box-shadow: none;
+	}
+}
+
+/* Shadow */
+
+.bg-shadow {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+}
+
+/* Selection */
+
+*::selection {
+	background-color: rgb(
+		var(--selection-color-bg)
+	);
+	color: rgb(
+		var(--text-color-invert)
+	);
+}
